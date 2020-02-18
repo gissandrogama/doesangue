@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}
+/*alinhamentos, espaçamentos, largura e altura*/
+header, main, footer{
+    text-align: center;
+}
+
+.donors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header, .form, main {
+    /*espaçamento com margin*/
+    margin: 0 auto 70px auto;
+
+    /*limites dos elementos na página*/
+    width: 90%;
+    max-width: 500px;
+
+}
