@@ -29,10 +29,15 @@ header, main, footer{
 
 header, .form, main {
     /*espaçamento com margin*/
-    margin: 0 auto 70px auto;
+    margin: 0 auto 70px;
+    /*0 no topo, auto na direita, 70px em baixo e auto na esquerda*/
 
     /*limites dos elementos na página*/
     width: 90%;
     max-width: 500px;
 
+}
+
+header h1, main h2 {
+    margin-bottom: 70px;
 }
