@@ -48,10 +48,10 @@ header, main, footer{
     text-align: center;
 }
 
-header, .form, main {
-    /*espaçamento com margin*/
-    margin: 0 auto 70px auto;
-    
+header, .form, main {  
+    margin: 0 auto 70px;
+    /*0 no topo, auto na direita, 70px em baixo e auto na esquerda*/
+
     /*limites dos elementos na página*/
     width: 90%;
     max-width: 500px;
@@ -179,3 +179,7 @@ section.form.hide {
     height: 0;
     margin-top: -70px;
 } 
+
+header h1, main h2 {
+    margin-bottom: 70px;
+}
