@@ -1,3 +1,11 @@
+/*GLOBAL*/
+
+* {
+    /*corrigindo comportamento padrão quando trabalha com preenchimento*/
+    box-sizing: border-box;
+}
+
+
 html, body {
     margin: 0;
 }
@@ -7,32 +15,167 @@ body {
     flex-direction: column;
 
     height: 100vh;
+
+    /*fonte*/
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
 }
 
-footer {
-    margin-top: auto;
+h1, h2 {
+    color: #000000ee;
 }
+
+
+/*TITULOS*/
+
+header h1, main h2 {
+    margin-bottom: 70px;
+}
+
+.form h2 {
+    text-align: right;
+    color: #ffffffb7;
+    font-size: 18px;
+}
+
+main h2 span {
+    color: #ff4f4f;
+}
+
 /*alinhamentos, espaçamentos, largura e altura*/
+/*ESTRUTURA*/
 header, main, footer{
     text-align: center;
-}
-
-.donors {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
 header, .form, main {
     /*espaçamento com margin*/
     margin: 0 auto 70px auto;
-
+    
     /*limites dos elementos na página*/
     width: 90%;
     max-width: 500px;
+    
+}
+
+/*HEADER*/
+.logo {
+    width: 120px;
+    margin: 70px 0;
 
 }
+
+header button {
+    margin-top: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #ff4f4f;
+    color: white;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 14px;
+}
+
+
+/* FORM */
+section.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*espaçamento no grid*/
+    grid-gap: 45px; 
+    align-items: center;
+    background-color: #ff4f4f;
+    padding: 16px 64px;
+    border-radius: 6px;    
+}
+
+form input,
+form button {
+    /*largura*/
+    width: 100%;
+    /*espaçamentos */
+    margin-bottom: 4px;
+
+    /* preenchimento */
+    padding: 8px 16px;
+
+    /*bordas*/
+    border-radius: 4px;
+    border: 1px #ffffff73 solid;
+
+}
+
+form input {
+    background-color: transparent;
+}
+
+form input::placeholder {
+    color: #ffffffaa;
+}
+
+form button {
+    font-weight: bold;
+}
+
+/* MAIN */
+main .donors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.blood {
+    color: #ff4f4f;
+    font-weight: bold;
+    font-size: 12px; 
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+
+    /*faz com que o before se mova só dentro do blood*/
+    position: relative;
+    
+}
+
+.blood::before {
+    content: "";
+    background-color: #ff4f4f11;
+    width: 40px;
+    height: 40px;
+
+    /*cria uma nova cama para o before, podendo colocar para qualquer lugar na pagina*/
+    position: absolute;
+
+    /*fazer a gota*/
+    border-radius: 50%;
+    border-top-right-radius: 0;
+    /*rotaciona um objeto*/
+    transform: rotate(-45deg);
+}
+
+.donor p {
+    margin-top: 24px;
+    font-size: 14px;
+}
+
+/*footer*/
+footer {
+    margin-top: auto;
+    padding: 16px;
+    border: 1px solid #eee;
+}
+
+/*funcionalidades com javascript*/
+
+section.form {
+    transition: all 300ms;
+}
+
+section.form.hide {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -70px;
+} 
