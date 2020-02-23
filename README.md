@@ -1,6 +1,7 @@
 # Doe sangue
 
-É um site para cadastro de doadores.
+É um site com funcionalidades básicas para cadastro de doadores.
+
 A aplicação foi desenvolvida com as seguintes tecnologias:
 
     * HTML
@@ -38,7 +39,8 @@ Pronto o site estará funcionando localmente.
 
 # Donote blood
 
-It is a site for donor registration.
+It is a website with basic features for donor registration.
+
 The application was developed with the following technologies:
 
     * HTML
