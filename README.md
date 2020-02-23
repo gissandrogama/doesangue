@@ -25,11 +25,11 @@ Clone o projeto do Github com o comando.
 `git clone git@github.com:gissandrogama/doesangue.git`
         
 
-execute o comando:
+execute o comando para instalação dos modulos do node:
     
 `npm install ou yarn`
 
-Por fim execute o comando.
+Por fim execute o comando para iniciar o sercidor:
     
 `npm start ou yarn start`
     
