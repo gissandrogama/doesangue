@@ -16,12 +16,11 @@ Para executar a aplicação localmente você necessita das seguintes ferramentas
 
 Após instalar as ferramentas citas acima.
     * Clone o projeto do Github com o comando.
-        ```
-        git clone git@github.com:gissandrogama/doesangue.git
+      
+        `git clone git@github.com:gissandrogama/doesangue.git`
 
 
-        ```
-
+        
 
     * execute os comandos.
     ```
