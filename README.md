@@ -18,18 +18,18 @@ Para executar a aplicação localmente você necessita das seguintes ferramentas
 
 Após instalar as ferramentas citas acima.
 
-    * Clone o projeto do Github com o comando.
+    Clone o projeto do Github com o comando.
     
     > git clone git@github.com:gissandrogama/doesangue.git
         
 
-    * execute os comandos.
+    execute os comandos.
     
     > npm install ou yarn
     
 
 
-    * Por fim execute o comando.
+    Por fim execute o comando.
     
     > npm start ou yarn start
     
