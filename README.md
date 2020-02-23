@@ -20,23 +20,19 @@ Após instalar as ferramentas citas acima.
 
     * Clone o projeto do Github com o comando.
     
-    ```shell
-        git clone git@github.com:gissandrogama/doesangue.git
-    ```
+    > git clone git@github.com:gissandrogama/doesangue.git
         
 
     * execute os comandos.
     
-    ```shell
-        npm install ou yarn
-    ```
+    > npm install ou yarn
+    
 
 
     * Por fim execute o comando.
     
-    ```shell
-        npm start ou yarn start
-    ```
+    > npm start ou yarn start
+    
 
 
 Pronto o site estará funcionando localmente.
