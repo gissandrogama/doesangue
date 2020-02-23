@@ -29,7 +29,7 @@ execute o comando para instalação dos modulos do node:
     
 `npm install ou yarn`
 
-Por fim execute o comando para iniciar o sercidor:
+Por fim execute o comando para iniciar o servidor:
     
 `npm start ou yarn start`
     
